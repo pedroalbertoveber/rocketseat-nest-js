@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
   "name": "Pedro Veber",
-  "email": "pedro.veber@outlook.com",
+  "email": "pedro.veber2@outlook.com",
   "password": "pe991007"
 }
 
@@ -25,18 +25,18 @@ Content-Type: application/json
 ###
 
 # @name create_question
-POST {{baseUrl}}/create-question
+POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Nova pergunta 2",
+  "title": "Nova pergunta 3",
   "content": "Conteúdo da pergunta"
 }
 
 ###
 
 # @name fetch_recent_questions
-GET {{baseUrl}}/questions?page=2
+GET {{baseUrl}}/questions?page=1
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
